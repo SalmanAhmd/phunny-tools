@@ -13,7 +13,9 @@
     "dev:ut": "vite --config vite.ut.config.ts",
     "build:ut": "tsc -p tsconfig.ut.json --noEmit && vite build --config vite.ut.config.ts",
     "preview:ut": "vite preview --config vite.ut.config.ts --outDir dist-ut",
-    "typecheck:ut": "tsc -p tsconfig.ut.json --noEmit"
+    "typecheck:ut": "tsc -p tsconfig.ut.json --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^11.11.17",
