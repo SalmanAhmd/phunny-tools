@@ -1,0 +1,122 @@
+@config "../../tailwind.ut.config.js";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  .dark {
+    color-scheme: dark;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-ink font-sans antialiased;
+    /* A faint paper grain so the flat colours feel printed, not sterile. */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+
+  .dark body {
+    @apply bg-ink-night text-cream;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+  }
+
+  ::selection {
+    @apply bg-zing-yellow text-ink;
+  }
+
+  *:focus-visible {
+    outline: 3px solid #7c3aed;
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* A chunky "sticker" card: hard edges, offset shadow, zero subtlety. */
+  .card {
+    @apply rounded-3xl border-2 border-ink bg-white shadow-pop dark:border-cream dark:bg-ink-soft;
+  }
+
+  .label {
+    @apply mb-1.5 block font-display text-xs font-bold uppercase tracking-widest opacity-70;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full border-2 border-ink bg-white px-2.5 py-1 text-xs font-semibold dark:border-cream dark:bg-ink-soft;
+  }
+
+  .tool-input {
+    @apply w-full rounded-xl border-2 border-ink bg-white px-3 py-2.5 text-sm text-ink outline-none transition-colors placeholder:text-ink/40 focus-visible:border-zing-purple dark:border-cream dark:bg-ink-soft dark:text-cream dark:placeholder:text-cream/40;
+  }
+
+  .stat-value {
+    @apply font-display text-3xl font-bold tabular-nums;
+  }
+
+  .btn {
+    @apply relative inline-flex select-none items-center justify-center gap-2 rounded-2xl border-2 border-ink px-5 py-3 font-display text-sm font-bold uppercase tracking-wide transition-transform duration-150 will-change-transform disabled:cursor-not-allowed disabled:opacity-50 disabled:shadow-none dark:border-cream;
+  }
+  .btn:not(:disabled):hover {
+    @apply -translate-y-0.5;
+  }
+  .btn:not(:disabled):active {
+    @apply translate-y-0.5;
+  }
+
+  .btn-pop {
+    @apply shadow-pop;
+  }
+  .btn-pop:not(:disabled):hover {
+    @apply -translate-x-0.5 -translate-y-1 shadow-pop-lg;
+  }
+  .btn-pop:not(:disabled):active {
+    @apply translate-x-0 translate-y-0 shadow-pop-sm;
+  }
+
+  .btn-primary {
+    @apply bg-zing-orange text-white;
+  }
+  .btn-purple {
+    @apply bg-zing-purple text-white;
+  }
+  .btn-lime {
+    @apply bg-zing-lime text-ink;
+  }
+  .btn-yellow {
+    @apply bg-zing-yellow text-ink;
+  }
+  .btn-ghost {
+    @apply bg-white text-ink dark:bg-ink-soft dark:text-cream;
+  }
+  .btn-danger {
+    @apply bg-zing-pink text-white;
+  }
+}
+
+/* The "custom cursor" replaces the pointer, but only where a precise pointer exists. */
+@media (min-width: 768px) and (pointer: fine) {
+  body.custom-cursor,
+  body.custom-cursor * {
+    cursor: none !important;
+  }
+}

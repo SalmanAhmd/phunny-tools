@@ -1,0 +1,37 @@
+{
+  "name": "useless-tools",
+  "homepage": "https://salmanahmd.github.io/phunny-tools/",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Useless Tools™ — Working Hard at Doing Absolutely Nothing.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit",
+    "dev:ut": "vite --config vite.ut.config.ts",
+    "build:ut": "tsc -p tsconfig.ut.json --noEmit && vite build --config vite.ut.config.ts",
+    "preview:ut": "vite preview --config vite.ut.config.ts --outDir dist-ut",
+    "typecheck:ut": "tsc -p tsconfig.ut.json --noEmit"
+  },
+  "dependencies": {
+    "framer-motion": "^11.11.17",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.462.0",
+    "pdfjs-dist": "^4.7.76",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
