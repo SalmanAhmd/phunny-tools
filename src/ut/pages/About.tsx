@@ -32,7 +32,7 @@ export default function About() {
       <SectionTitle
         kicker="About us"
         title="A company that does not exist, doing nothing, magnificently"
-        subtitle="Useless Tools™ was founded during a meeting that had been scheduled to decide whether to schedule a meeting. It has been profitable ever since (the imaginary kind)."
+        subtitle="Phunny Tools™ was founded during a meeting that had been scheduled to decide whether to schedule a meeting. It has been profitable ever since (the imaginary kind)."
       />
 
       {/* Mission */}

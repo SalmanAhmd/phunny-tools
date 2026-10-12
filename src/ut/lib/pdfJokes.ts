@@ -134,7 +134,7 @@ export function toCertificate(fileName: string, pageCount: number): string {
   const ref = `UT-${randInt(10000, 99999)}-${String.fromCharCode(65 + randInt(0, 25))}`;
   return [
     "╔══════════════════════════════════════════════════════╗",
-    "║          USELESS TOOLS™ CERTIFICATE OF MERIT          ║",
+    "║          PHUNNY TOOLS™ CERTIFICATE OF MERIT          ║",
     "╚══════════════════════════════════════════════════════╝",
     "",
     `This is to certify that the document known as "${fileName}"`,

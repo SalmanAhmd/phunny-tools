@@ -39,7 +39,7 @@ export default function AllTools() {
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
       <SectionTitle
         kicker="Directory"
-        title="All Useless Tools"
+        title="All Phunny Tools"
         subtitle={`${results.length} of ${Object.keys(TOOL_MAP).length} experiences match. You have already survived ${usedCount} of them.`}
       />
 

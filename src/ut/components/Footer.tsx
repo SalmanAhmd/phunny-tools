@@ -12,7 +12,7 @@ export function Footer() {
                 🔨
               </span>
               <span className="font-display text-lg font-bold">
-                Useless Tools<sup className="text-[0.6rem]">™</sup>
+                Phunny Tools<sup className="text-[0.6rem]">™</sup>
               </span>
             </div>
             <p className="mt-4 max-w-md text-sm text-cream/70">
@@ -72,7 +72,7 @@ export function Footer() {
         <div className="mt-10 rounded-2xl border-2 border-cream/30 bg-white/5 p-5 text-sm text-cream/70">
           <p className="font-semibold text-cream">Disclaimer, in full:</p>
           <p className="mt-2">
-            Useless Tools™ is not responsible for lost productivity, unnecessary laughter,
+            Phunny Tools™ is not responsible for lost productivity, unnecessary laughter,
             damaged egos, or the sudden urge to hammer your laptop. Please do not actually hammer
             your hardware. No files are uploaded, compressed, converted, or improved. Side effects
             may include mild bewilderment and an inexplicable desire to share this with a
@@ -81,7 +81,7 @@ export function Footer() {
         </div>
 
         <p className="mt-8 text-xs text-cream/50">
-          © {new Date().getFullYear()} Useless Tools™, a fictional company staffed entirely by
+          © {new Date().getFullYear()} Phunny Tools™, a fictional company staffed entirely by
           imaginary interns. All rights reserved for no reason.
         </p>
       </div>

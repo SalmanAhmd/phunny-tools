@@ -2,7 +2,7 @@ import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 
 /**
- * Vite config for the self-contained Useless Tools app under src/ut.
+ * Vite config for the self-contained Phunny Tools app under src/ut.
  *
  * Dev:    npx vite --config vite.ut.config.ts       (open http://localhost:5173)
  * Build:  npx vite build --config vite.ut.config.ts (outputs to dist-ut/)

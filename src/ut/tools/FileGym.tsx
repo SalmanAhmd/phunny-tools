@@ -90,7 +90,7 @@ export default function FileGym() {
 
   const certText = file
     ? [
-        "USELESS TOOLS™ — DIGITAL FITNESS CERTIFICATE",
+        "PHUNNY TOOLS™ — DIGITAL FITNESS CERTIFICATE",
         "".padEnd(54, "="),
         `ATHLETE:      ${name}`,
         `FILE:         ${file.name}`,

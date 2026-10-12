@@ -35,7 +35,7 @@ export function NavBar({ onOpenSearch }: { onOpenSearch: () => void }) {
             🧰
           </span>
           <span className="hidden font-display text-base font-bold leading-none tracking-tight sm:block">
-            Useless Tools
+            Phunny Tools
             <span className="align-super text-[9px] font-semibold text-tangerine">™</span>
           </span>
         </Link>
@@ -168,7 +168,7 @@ export function Footer() {
               🧰
             </span>
             <span className="font-display text-lg font-bold">
-              Useless Tools<span className="align-super text-[10px] text-tangerine">™</span>
+              Phunny Tools<span className="align-super text-[10px] text-tangerine">™</span>
             </span>
           </div>
           <p className="mt-3 max-w-sm text-sm text-ink-muted dark:text-cream/60">
@@ -214,7 +214,7 @@ export function Footer() {
       </div>
 
       <div className="border-t-2 border-ink/15 py-4 text-center font-mono text-[10px] uppercase tracking-[0.25em] text-ink-muted dark:border-cream/15 dark:text-cream/40">
-        © {new Date().getFullYear()} Useless Tools™ · Legal department: an empty chair · All rights utterly wasted
+        © {new Date().getFullYear()} Phunny Tools™ · Legal department: an empty chair · All rights utterly wasted
       </div>
     </footer>
   )

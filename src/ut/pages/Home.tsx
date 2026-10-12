@@ -53,7 +53,7 @@ export default function Home() {
               <Hammer size={14} /> Working hard at doing absolutely nothing
             </span>
             <h1 className="mt-5 font-display text-5xl font-bold leading-[1.02] tracking-tight text-balance sm:text-6xl lg:text-7xl">
-              Useless Tools<span className="align-top text-2xl">™</span>
+              Phunny Tools<span className="align-top text-2xl">™</span>
             </h1>
             <p className="mt-4 max-w-xl text-lg text-balance opacity-80">
               A premium-looking suite of tools that make easy things unnecessarily difficult.

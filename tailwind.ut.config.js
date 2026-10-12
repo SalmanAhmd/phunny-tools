@@ -1,5 +1,5 @@
 /**
- * Tailwind config for the self-contained "Useless Tools" app under src/ut.
+ * Tailwind config for the self-contained "Phunny Tools" app under src/ut.
  *
  * This is intentionally separate from the repository's root tailwind.config.js
  * so the src/ut build can evolve independently. It is wired up via the

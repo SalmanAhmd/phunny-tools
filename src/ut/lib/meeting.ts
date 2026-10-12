@@ -188,7 +188,7 @@ export function meetingToText(r: MeetingReport): string {
   const dateStr = (d: Date) => d.toLocaleDateString(undefined, { dateStyle: "full" });
   return [
     line,
-    "  USELESS TOOLS™ — UNNECESSARY MEETING RECORD",
+    "  PHUNNY TOOLS™ — UNNECESSARY MEETING RECORD",
     "  Prepared by the Department of Unresolved Decisions",
     line,
     "",
@@ -236,7 +236,7 @@ export function meetingToText(r: MeetingReport): string {
     "",
     line,
     "  This document has been reviewed by nobody and approved by everyone.",
-    "  Useless Tools™ is a parody. No real meetings were harmed.",
+    "  Phunny Tools™ is a parody. No real meetings were harmed.",
     line,
   ].join("\n");
 }

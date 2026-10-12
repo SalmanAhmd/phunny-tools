@@ -53,12 +53,12 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b-2 border-ink bg-cream/90 backdrop-blur dark:border-cream dark:bg-ink-night/90">
       <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3 sm:px-6">
-        <Link to="/" className="group flex items-center gap-2" aria-label="Useless Tools home">
+        <Link to="/" className="group flex items-center gap-2" aria-label="Phunny Tools home">
           <span className="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-ink bg-zing-orange text-lg shadow-pop-sm transition-transform group-hover:rotate-12 dark:border-cream">
             🔨
           </span>
           <span className="hidden font-display text-lg font-bold leading-none sm:block">
-            Useless&nbsp;Tools
+            Phunny&nbsp;Tools
             <sup className="ml-0.5 text-[0.6rem]">™</sup>
           </span>
         </Link>

@@ -198,7 +198,7 @@ export default function Home() {
 
             <div className="mt-7 flex flex-wrap items-center gap-3">
               <Link to="/tools" className="btn btn-primary" style={{ padding: '1rem 1.75rem' }}>
-                Explore Useless Tools <ArrowRight className="h-4 w-4" />
+                Explore Phunny Tools <ArrowRight className="h-4 w-4" />
               </Link>
               <Button variant="sun" size="lg" onClick={surprise} icon={<Dices className="h-4 w-4" />}>
                 Surprise Me
@@ -299,7 +299,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <SectionTitle
             kicker="The collection"
-            title="Useless tools, sorted into deeply serious categories"
+            title="Phunny Tools, sorted into deeply serious categories"
             subtitle="Filter by category on the All Tools page, or simply start clicking and hope for the best."
           />
 
