@@ -6,7 +6,8 @@ export default defineConfig({
   base: '/',
   resolve: {
     alias: {
-      "@": new URL("./src", import.meta.url).pathname,
+      // Decode the URL path so directories containing spaces resolve correctly.
+      "@": decodeURIComponent(new URL("./src", import.meta.url).pathname),
     },
   },
   build: {
