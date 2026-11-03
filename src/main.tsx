@@ -8,7 +8,7 @@ import './index.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/phunny-tools">
+    <BrowserRouter basename="/">
       <PrefsProvider>
         <NonsenseProvider>
           <App />
